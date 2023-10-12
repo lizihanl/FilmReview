@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment5</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/img/dune2.jpg" rel="icon" type="image/x-icon" />
+    <link href="/css/style.css" rel="stylesheet"/>
+  </head>
+  <body>
+
+    <!-- <div id="formPanel"> -->
+      <form id='content'>
+        <p id="form_Title">Welcome</p>
+        <input id='email' type='email' required="required" placeholder="Email" value="hank_frank@bcit.ca"/>
+        <input id='password' type='password' required="required" placeholder="Password" value="a12345"/>
+        <input type="button" value="Login" id="btn_login"/>
+        <!-- <p><span id="serverMsg"></span></p> -->
+        <p ><a href="#">Forgot Login</a>?</p>
+        <p ><a href="#">Get Membership</a></p>
+        <p id="errMsg">&nbsp;</p>
+      </form>
+    <!-- </div> -->
+
+    <footer >
+      <p>&copy;lizihan's workroom</p>
+    </footer>
+
+    <script src="js/client.js"></script>
+    <script>
+//      $(document).ready(function() {
+//
+//        $("#submit").click(function() {
+//            $.ajax({
+//                url: "/authenticate",
+//                type: "POST",
+//                dataType: "JSON",
+//                data: { email: $("#email").val(), password: $("#password").val() },
+//                success: function(data) {
+//                    //console.log("Data returned from server: ", data);
+//                    if(data['status'] == "success") {
+//                        // redirect
+//                        window.location.replace("/profile");
+//                    } else {
+//                        // show error message
+//                        $("#errorMsg").html(data['msg']);
+//                    }
+//
+//                },
+//                error: function(jqXHR, textStatus, errorThrown) {
+//                    $("body").text(jqXHR.statusText);
+//                }
+//            });
+//
+//        });
+//
+//      });
+
+    </script>
+</body>
+</html>

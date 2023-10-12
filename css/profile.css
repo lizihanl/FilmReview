@@ -1,0 +1,231 @@
+/* @font-face {
+    font-family: 'comfortaaregular';
+    src: url('/fonts/comfortaa-variablefont_wght-webfont.eot');
+    src: url('/fonts/comfortaa-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/comfortaa-variablefont_wght-webfont.woff2') format('woff2'),
+         url('/fonts/comfortaa-variablefont_wght-webfont.woff') format('woff'),
+         url('/fonts/comfortaa-variablefont_wght-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} */
+/* @import url(https://fonts.googleapis.com/css?family=Hind);
+@import url(https://fonts.googleapis.com/css?family=Sofia); */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  /* font-family: "comfortaaregular"; */
+  width: 100%;
+  height: 100%;
+  font-size: 12pt;
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  background-color: rgb(235, 232, 232);
+  /* background: url("/imgs/dume3.jpg") center/cover ; */
+  background: url("/img/dune.jpg") center/cover fixed;
+
+
+  opacity: 0.8;
+}
+
+#h3{
+  height: 10%;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bolder;
+  color:rgb(245, 255, 101);
+}
+#dataContent{
+width: 100%;
+height: 600px;
+overflow: scroll;
+
+}
+li{
+  list-style-type: none;  
+}
+
+/* @media screen and (max-width: 1280px) and (min-width: 700px){} */
+#dataContent ul{
+width: 100%;
+background-color: rgb(73, 41, 1);
+display: grid;
+grid-template-columns: 50px auto 100px;
+grid-template-rows: 30px auto;
+/* margin-top:8px; */
+border-bottom: 2px solid rgb(255, 255, 255);
+/* opacity: 0.6; */
+}
+.Headline{
+/* width: 100%; */
+grid-column: 2/3;
+grid-row: 1/2;
+
+text-align: center;
+}
+.PostDate{
+  grid-column: 3/4;
+  grid-row: 1/2;
+  margin-left: 5px;
+  font-size: 10px; 
+}
+.a_film_critic{
+grid-column: 1/2;
+grid-row: 2/3;
+font-size: 10px;
+margin: 0 auto;
+text-align: center;
+float: left;
+}
+.Film_critics{
+  grid-column: 2/3;
+  grid-row: 2/3;
+  padding-left: 5px;
+  padding-right: 5px;
+font-size: 8px;
+}
+.score{
+grid-column: 3/4;
+grid-row: 2/3;
+
+/* float: right; */
+margin: auto auto;
+/* width: 3%; */
+font-size: 8px;
+}
+
+#foot{
+height: 10%;
+width: 100%;
+}
+#UserInf{
+width: 70%;
+height: 100%;
+display: grid;
+grid-template-columns: 150px 280px 200px;
+grid-template-rows: 50% 50%;
+float: left;
+color: rgb(245, 255, 101);
+background-color:rgb(73, 41, 1);
+}
+Inf_part1{
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+Inf_part2{
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+Inf_part3{
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+Inf_part4{
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+Inf_part5{
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+Inf_part6{
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+form {
+  height: 100%;
+  display: block;
+  float: right;
+  /* margin: 0 auto; */
+  margin-right: 50px;
+  font-size: 24px;
+  font-weight: bolder;
+  }
+/* input[type='submit'] { */
+  #back{
+  font-size: 24px;
+  background-color: rgb(245, 255, 101);
+  border: 3px solid blue;
+  color: rgb(10, 10, 10);
+  cursor: pointer;
+}
+#back:hover {
+  color: white;
+  font-size: 24px;
+  background-color: blue;
+  outline: none;
+}
+:focus {
+  color: white;
+  font-size: 24px;
+  outline: none;
+}
+
+@media screen and (max-width: 700px){
+  #dataContent ul{
+    /* width: 100%; */
+    display: grid;
+    grid-template-columns: auto 100px;
+    grid-template-rows: 30px  30px auto;
+    }
+    .Headline{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    }
+    .PostDate{
+      grid-column: 2/3;
+      grid-row: 2/3;
+    }
+    .a_film_critic{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    }
+    .Film_critics{
+      grid-column: 1/2;
+      grid-row: 2/4;
+    }
+    .score{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    
+    }
+
+
+
+  #UserInf{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% auto ;
+  }
+  Inf_part1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  Inf_part2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  Inf_part3{
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  Inf_part4{
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  Inf_part5{
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  Inf_part6{
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  form {
+    margin-right:250px;
+  }
+}

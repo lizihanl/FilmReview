@@ -1,0 +1,146 @@
+
+review:
+Q1 A3
+id: #
+class: .
+//网格
+display: grid;
+//横着
+grid-template-columns: 50px auto 100px;
+//竖着
+grid-template-rows: 30px auto;
+
+//怎么摆
+.Headline{
+/* width: 100%; */
+grid-column: 2/3;
+grid-row: 1/2;
+text-align: center;
+}
+.PostDate{
+  grid-column: 3/4;
+  grid-row: 1/2;
+  margin-left: 5px;
+  font-size: 10px; 
+}
+.Film_critics{
+  grid-column: 2/3;
+  grid-row: 2/3;
+  padding-left: 5px;
+  padding-right: 5px;
+font-size: 8px;
+}
+.score{
+grid-column: 3/4;
+grid-row: 2/3;
+/* float: right; */
+margin: auto auto;
+/* width: 3%; */
+font-size: 8px;
+}
+
+//Q2 A5
+let queryString = "email=" + email.value + "&password=" + password.value;
+document.getElementById("errMsg").innerHTML = 1234;
+
+//Q3 A4 video
+.onclick(function)
+var oPrev=document.getElementById('prev');
+oPrev.onclick=function(){
+                num--;
+                if(flgBtn==true){
+                    if(num== -1){
+                        num=arrText.length-1;
+                    }
+                }
+                else{
+                    if(num== -1){
+                        num=0;
+                        alert('已经到头了')
+                    }
+                }
+                fnTab();
+            }
+
+//Q4 A4 video
+
+//Q5 node basic
+
+//q6
+<figure>
+                <a href="https://dummyimage.com"><img alt="Santa Monica" src="./SANTAMONICA1.jpeg" width="400" height="400"></a>
+            </figure>
+<figure>
+                <img alt="" src="https://dummyimage.com/600x400/000/fff" width="400" height="400">
+            </figure>
+
+#img2 {
+        clip-path: circle(50% at 50% 50%);
+      }
+
+@import url(https://fonts.googleapis.com/css?family=Hind);
+
+      body {
+        font-family: 'Hind', sans-serif;
+        margin: 0px;
+        padding: 0px;
+      }
+
+
+//Q7 A5 190
+async function init() {
+
+}
+// RUN SERVER
+let port = 8000;
+
+app.listen(port, init);
+
+// q7 
+mysql -u root -p
+show databases;
+source /Users/lizihan/Documents/COMP1537-final-exam-Li-Zihan/question7.sql
+select * from test_tab;
+
+//q5
+function ajaxGET(url, callback, method) {
+
+        const xhr = new XMLHttpRequest();
+        xhr.onload = function() {
+            if (this.readyState == XMLHttpRequest.DONE && this.status == 200) {
+                //console.log('responseText:' + xhr.responseText);
+                callback(this.responseText);
+
+                // the following commented out line won't work ... discuss!!!
+                //return this.responseText;
+            } else {
+                console.log(this.status);
+            }
+        }
+        xhr.open(method, url);
+        xhr.send();
+    }
+}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Final</title>
+        <meta charset="utf-8" />
+        <style>
+
+
+        </style>
+    </head>
+    <body>
+
+    </body>
+</html>
+
+text-align: center;
+
+<link rel="stylesheet" type="text/css" href="style.css"/>
+
+
+            width: 100px;
+            height: 80px;
